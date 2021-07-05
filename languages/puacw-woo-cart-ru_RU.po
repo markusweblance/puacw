@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pop-Up Ajax Cart for Woocommerce\n"
+"POT-Creation-Date: 2021-07-05 15:40+0300\n"
+"PO-Revision-Date: 2021-07-05 15:41+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: puacw-woo-cart.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-puacw-woo-cart-admin.php:106
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/class-puacw-woo-cart-admin.php:186
+msgid "Basic Settings"
+msgstr "Базовые настройки"
+
+#: admin/class-puacw-woo-cart-admin.php:188
+msgid "Pop-Up title"
+msgstr "Заголовок модального окна"
+
+#: admin/class-puacw-woo-cart-admin.php:193
+msgid "Border Color"
+msgstr "Цвет рамки"
+
+#: admin/class-puacw-woo-cart-admin.php:198
+msgid "Background of buttons for deleting product and closing pop-up"
+msgstr "Цвет фона кнопок удаления товара и закрытия модального окна"
+
+#: admin/class-puacw-woo-cart-admin.php:203
+msgid "Background of quantity buttons"
+msgstr "Цвет фона кнопок счётчика"
+
+#: admin/class-puacw-woo-cart-admin.php:207
+msgid "Pop-Up Background"
+msgstr "Фон модального окна"
+
+#: public/partials/puacw-display-basket-counter.php:16
+#: public/partials/puacw-display-pop-up.php:23
+msgid "Cart"
+msgstr "Корзина"
+
+#: public/partials/puacw-display-pop-up.php:87
+msgid "Your cart is currently empty."
+msgstr "Ваша корзина пуста."
+
+#: public/partials/puacw-display-pop-up.php:93
+msgid "Total:"
+msgstr "Итого:"
+
+#: public/partials/puacw-display-pop-up.php:98
+msgid "Сheckout"
+msgstr "Оформить заказ"
+
+#. Plugin Name of the plugin/theme
+msgid "Pop-Up Ajax Cart for Woocommerce"
+msgstr "Pop-Up Ajax Cart for Woocommerce"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/markusweblance/puacw"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Ajax Shopping Cart for Woocommerce in pop-up."
+msgstr "Ajax Shopping Cart for Woocommerce in pop-up."
+
+#. Author of the plugin/theme
+msgid "Dmitry Tihonov"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/markusweblance"
+msgstr ""
+
+#~ msgid "n"
+#~ msgstr "n"
+
+#~ msgid ""
+#~ "This is a short description of what the plugin does. It's displayed in "
+#~ "the WordPress admin area."
+#~ msgstr ""
+#~ "This is a short description of what the plugin does. It's displayed in "
+#~ "the WordPress admin area."
+
+#~ msgid "mark"
+#~ msgstr "mark"

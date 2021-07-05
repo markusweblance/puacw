@@ -1,0 +1,252 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#puacw-pop-up {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.puacw-preloader{
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #337AB7;
+    animation: preloader-spin 2s linear infinite;
+    top: 50%;
+    left: 50%;
+    margin: -25px -25px;
+}
+
+.puacw-preloader:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #337AB7;
+    animation: preloader-spin 1.5s linear infinite;
+}
+
+.puacw-preloader:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BFE2FF;
+    animation: preloader-spin 3s linear infinite;
+}
+
+@keyframes preloader-spin {
+    0%   {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.puacw-basket {
+    display: flex;
+}
+
+.puacw-basket .puacw__counter {
+    padding-left: 5px;
+}
+
+.puacw-basket .puacw__counter:before{
+    content: '( ';
+}
+
+.puacw-basket .puacw__counter:after{
+    content: ' )';
+}
+
+.puacw-pop-up .puacw-pop-up__header{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+.puacw-pop-up .puacw-pop-up__header strong{
+    padding-left: 15px;
+}
+
+.puacw-pop-up .puacw-pop-up__btn-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.5s ease-in, background-color 0.5s ease;
+    width: 40px;
+    height: 40px;
+}
+
+.puacw-pop-up .puacw-pop-up__btn-close:hover,
+.puacw-pop-up .puacw-item__del span:hover{
+    color: #ffffff;
+}
+
+.puacw-pop-up .puacw-pop-up__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    border-radius: 2px;
+}
+
+
+.puacw-pop-up .puacw-pop-up__content{
+    padding: 15px;
+    max-height: 350px;
+    min-height: 100px;
+    overflow-y: auto;
+}
+
+.puacw-empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.puacw-pop-up .puacw-pop-up__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.puacw-pop-up .puacw-pop-up__item {
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.puacw-pop-up .puacw-pop-up__item:not(:first-child){
+    margin-top: 10px;
+}
+
+.puacw-pop-up .puacw-item__img {
+    flex: 0 0 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.puacw-pop-up .puacw-item__img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.puacw-pop-up .puacw-item__del {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puacw-pop-up .puacw-item__del span {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.5s ease, color 0.5s ease-in;
+}
+
+.puacw-pop-up .puacw-item__title {
+    flex: 0 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.puacw-pop-up .puacw-item__quantity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 0 100px;
+}
+
+.puacw-pop-up .puacw-item__quantity input {
+    width: 35px;
+    height: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.puacw-pop-up .puacw-item__quantity span {
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+}
+
+.puacw-pop-up .puacw-item__quantity span:hover:after,
+.puacw-pop-up .puacw-item__quantity span:hover:before{
+    background-color: #ffffff;
+}
+
+.puacw-pop-up .puacw-item__quantity .puacw-item__minus:after,
+.puacw-pop-up .puacw-item__quantity .puacw-item__plus:after{
+    content: '';
+    width: 10px;
+    left: 0;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    margin-left: 5px;
+    transition: background-color 0.5s ease-in;
+}
+
+.puacw-pop-up .puacw-item__quantity .puacw-item__plus:before{
+    content: '';
+    width: 10px;
+    left: 0;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 5px;
+    transition: background-color 0.5s ease-in;
+}
+
+
+.puacw-pop-up .puacw-item__total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 80px;
+}
+
+.puacw-pop-up .puacw-pop-up__total{
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}

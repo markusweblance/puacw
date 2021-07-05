@@ -1,0 +1,26 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.puacw-admin .puacw-admin__body{
+    padding: 20px;
+}
+
+.puacw-admin .puacw-admin__content{
+    display: grid;
+    grid-template-columns: minmax(200px, 600px) minmax(200px, 550px);
+    grid-gap: 20px;
+}
+
+.puacw-admin .puacw-admin__right{
+    padding: 20px;
+    height: fit-content;
+    text-align: justify;
+}
+
+@media (max-width: 620px) {
+    .puacw-admin .puacw-admin__content{
+        grid-template-columns: auto;
+    }
+}
