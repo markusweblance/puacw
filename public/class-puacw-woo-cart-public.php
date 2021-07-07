@@ -124,7 +124,7 @@ class Puacw_Woo_Cart_Public {
 		$cart  = WC()->cart;
 		$count = $cart->get_cart_contents_count();
 		ob_start(); ?>
-        <span class="puacw__counter"><?= $count ?></span>
+        <span class="puacw__counter"><?php esc_html_e( $count ) ?></span>
 		<?php
 		$fragments['.puacw__counter'] = ob_get_clean();
 

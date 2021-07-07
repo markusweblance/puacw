@@ -50,12 +50,12 @@ $puacw_opt = get_option( 'puacw-woo-cart' );
 								}
 							}
 							if ( ! $product_permalink ) {
-								echo '<img src="' . esc_url( $image_url ) . '" alt="' . esc_html( $_product->get_name() ) . '"/>';
+								echo '<img src="' . esc_url( $image_url ) . '" alt="' . esc_attr( $_product->get_name() ) . '"/>';
 							} else {
 								echo sprintf( '<a href="%1s"><img src="%2s" alt="%3s"/></a>',
 									esc_url( $product_permalink ),
 									esc_url( $image_url ),
-									esc_html( $_product->get_name() )
+									esc_attr( $_product->get_name() )
 								);
 							}
 							?>

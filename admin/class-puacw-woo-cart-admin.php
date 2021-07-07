@@ -224,7 +224,7 @@ class Puacw_Woo_Cart_Admin {
 		$val = get_option( $this->plugin_name );
 		$val = $val ? $val['title'] : null;
 		?>
-        <input type="text" name="<?php echo $this->plugin_name ?>[title]" value="<?php echo esc_attr( $val ) ?>"/>
+        <input type="text" name="<?php echo esc_attr($this->plugin_name) ?>[title]" value="<?php echo esc_attr( $val ) ?>"/>
 		<?php
 	}
 
@@ -235,7 +235,7 @@ class Puacw_Woo_Cart_Admin {
 		$val = get_option( $this->plugin_name );
 		$val = $val ? $val['border_color'] : '#e9e9e9';
 		?>
-        <input type="text" name="<?php echo $this->plugin_name ?>[border_color]" value="<?php echo esc_attr( $val ) ?>"
+        <input type="text" name="<?php echo esc_attr($this->plugin_name) ?>[border_color]" value="<?php echo esc_attr( $val ) ?>"
                class="puacw-border-color-field" data-default-color="#e9e9e9"/>
 		<?php
 	}
@@ -247,7 +247,7 @@ class Puacw_Woo_Cart_Admin {
 		$val = get_option( $this->plugin_name );
 		$val = $val ? $val['bg_color_del'] : '#8b0000';
 		?>
-        <input type="text" name="<?php echo $this->plugin_name ?>[bg_color_del]" value="<?php echo esc_attr( $val ) ?>"
+        <input type="text" name="<?php echo esc_attr($this->plugin_name) ?>[bg_color_del]" value="<?php echo esc_attr( $val ) ?>"
                class="puacw-border-color-field" data-default-color="#8b0000"/>
 		<?php
 	}
@@ -259,7 +259,7 @@ class Puacw_Woo_Cart_Admin {
 		$val = get_option( $this->plugin_name );
 		$val = $val ? $val['bg_color_quantity'] : '#8fbc8f';
 		?>
-        <input type="text" name="<?php echo $this->plugin_name ?>[bg_color_quantity]"
+        <input type="text" name="<?php echo esc_attr($this->plugin_name) ?>[bg_color_quantity]"
                value="<?php echo esc_attr( $val ) ?>"
                class="puacw-border-color-field" data-default-color="#8fbc8f"/>
 		<?php
@@ -272,7 +272,7 @@ class Puacw_Woo_Cart_Admin {
 		$val = get_option( $this->plugin_name );
 		$val = $val ? $val['pop_up_bg'] : '#ffffff';
 		?>
-        <input type="text" name="<?php echo $this->plugin_name ?>[pop_up_bg]" value="<?php echo esc_attr( $val ) ?>"
+        <input type="text" name="<?php echo esc_attr($this->plugin_name) ?>[pop_up_bg]" value="<?php echo esc_attr( $val ) ?>"
                class="puacw-border-color-field" data-default-color="#ffffff"/>
 		<?php
 	}
